@@ -1,5 +1,8 @@
 package factory;
 
+import factory.car_example.CarFactory;
+import factory.car_example.Nexon;
+
 public class Main {
     /*Factory Design pattern is a design pattern in Object Oriented Programming
     * to create object of a class without specifying the exact class to be instantiated.
@@ -12,6 +15,10 @@ public class Main {
         if(obj!=null){
             obj.draw();
         }
+
+        Nexon car = CarFactory.getInstance("petrol");
+        car.start();
+        car.energy();
 
     }
 
