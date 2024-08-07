@@ -6,9 +6,9 @@ public class Main {
     * In this approach a single function or a class called factory handles the creation of object*/
     public static void main(String[] args) {
 
-        ShapeFactory shapeFactory = new ShapeFactory();
 
-        Shape obj = shapeFactory.getShape("square");
+
+        Shape obj = ShapeFactory.getShape("square");
         if(obj!=null){
             obj.draw();
         }

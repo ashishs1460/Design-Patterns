@@ -2,7 +2,11 @@ package factory;
 
 public class ShapeFactory {
 
-    public Shape getShape(String shape){
+    private ShapeFactory(){
+
+    }
+
+    public static Shape getShape(String shape){
         if(shape == null){
             return null;
         }
